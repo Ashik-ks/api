@@ -77,3 +77,10 @@ justify-content: space-evenly;
  font-weight: 600;
 
 }
+.null{
+    border-bottom: 2px solid grey;
+}
+.btn2{
+    background-color: red;
+    border-color: red;
+}
