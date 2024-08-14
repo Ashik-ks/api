@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fruitables{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+    padding-top: 4px;
+}
+.navbar1{
+   margin-left: 200px;
+
+}
+.home{
+    color: rgb(104, 239, 51);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+}
+.navtext{
+    font-size: 17px;
+    font-weight: 500;
+    color: grey;
+}
+.nav3{
+display: flex;
+justify-content: space-evenly;
+}
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    margin-left: 10px;
+}
+.description{
+    color: rgb(209, 195, 195);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.rating,.category{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(199, 190, 190);
+    margin-left: 10px;
+}
+.fourdiv{
+    border: 2px solid grey;
+   
+}
+#titleid{
+    font-size: 15px;
+}
+#categoryid{
+    font-size: 30px;
+}
+#descriptionid{
+    font-size: 15px;
+}
+#ratingid{
+    font-size: 25px;
+}
+/* .img{
+   width: 100%;
+   height: 250px;
+   background-color: aqua;
+} */
+.price{
+    width: 104px;
+    height: 30px;
+}
+.imgcol{
+ background-image: url("./images/hero-img.jpg");
+ font-size: 80px;
+ font-weight: 600;
+
+}
