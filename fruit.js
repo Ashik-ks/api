@@ -29,11 +29,13 @@
                         let title = document.getElementsByClassName('title');
                         let description = document.getElementsByClassName('description');
                         let rating = document.getElementsByClassName('rating');
+                        let rating1 = document.getElementsByClassName('rating1');
                         let category = document.getElementsByClassName('category');
                         let image = document.getElementsByClassName('image');
                         let readmore = document.getElementById('readmore');
                         let price = document.getElementsByClassName('price');
-               
+                        let btn2 = document.getElementsByClassName('btn2').value;
+                       
                        
                
                     
@@ -46,6 +48,9 @@
                     for (i = 0; i< rating.length && i < datas.length; i++){
                         rating[i].innerHTML = (datas[i].rating.count)
                     }
+                    for (i = 0; i< rating1.length && i < datas.length; i++){
+                        rating1[i].innerHTML = (datas[i].rating1.rate)
+                    }
                     for (i = 0; i< image.length && i < datas.length; i++){
                         image[i].src = (datas[i].image)
                         console.log("imge",image)
@@ -54,7 +59,7 @@
                         category[i].innerHTML = (datas[i].category)
                     }
                     
-                     //seconddiv
+                    
                      for (i = 0; i< readmore.length && i < datas.length; i++){
                         readmore[i].innerHTML = (datas[i].readmore)
                     }
@@ -64,13 +69,21 @@
                         price[i].innerHTML = (datas[i].price)
                         
                     }
-                     
-                    console.log("nnn",price)
-
+                    for (let i = 0; i < boxes.length && i < datas.length; i++) {
+                        let button = document.createElement('button');
+                        button.innerHTML = 'Add to Cart';
+                        button.className = 'btn2';
+                        boxes[i].appendChild(button);
+                    }
+                        
                     }
     
                 }
             }
+
         }
     }
+    
+        
+    
 }
