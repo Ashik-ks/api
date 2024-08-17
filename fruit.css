@@ -32,107 +32,57 @@ justify-content: space-evenly;
     width: 150px;
     border: 2px solid greenyellow;
 }
-.title{
-    font-size: 28px;
-    font-weight: 600;
-    color: black;
-    margin-left: 10px;
-}
-.description{
-    color: rgb(209, 195, 195);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 10px;
-}
-.rating,.category{
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(199, 190, 190);
-    margin-left: 10px;
-}
-.fourdiv{
-    border: 2px solid grey;
-   
-}
 #titleid{
-    font-size: 15px;
-}
-#categoryid{
-    font-size: 30px;
-}
-
-#descriptionid{
-    font-size: 15px;
-}
-#ratingid{
-    font-size: 25px;
-}
-.img1c{
-    width: 200px;
-    height: auto;
-}
-.price{
-    width: 100%;
-    height: 30px;
-}
-.imgcol{
- background-image: url("./images/hero-img.jpg");
- font-size: 80px;
- font-weight: 600;
-
-}
-.null{
-    border-bottom: 2px solid grey;
-}
-.btn22{
-    width: 110px;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(245, 238, 238);
-    color: rgb(170, 243, 246);
-    border-radius: 7px;
-}
-#priceid{
-    width: 90px;
-    background-color: white;
+    font-size: 50px;
+    font-weight: 800;
     color: black;
-    border: white;
-    font-size: 17px;
+}
+#descriptionid{
+    font-size: 30px;
+    font-weight: 300;
+    color: gray;
+}
+#categoryid,#ratingid{
+    font-size: 30px;
     font-weight: 500;
+    color: gray;
 }
-#bangleimg{
-    width: 20%;
-    height: 100px;
+.carouseldiv{
+    display: flex;
+    
 }
-#bangleimg1{
-    width: 30%;
-    margin-top: 5px;
+.carouselimg{
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
 }
-#bangleimg2{
-    width: 50%;
-    margin-top: 10px;
-    height: 94px;
-}
-#bangleimg3{
-    width: 60%;
+.carouselimg1{
+    width: 150px;
     height: 150px;
 }
-#tvimg{
-    width: 50%;
-    height: 350px;
+#maindiv{
+    width: 100%;
 }
-.w{
-    display: flex;
-    flex-direction: column-;
+#datacontainer1{
+    width: 90%;
+    
 }
-#titleid{
-    border: 2px solid red;
-    display: inline-block;
+#titleid2{
+    font-size: 15px;
+    font-weight: 700;
 }
-#datacontainer{
-  
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 5%;
+#categoryid2{
+    font-size: 15px;
+    font-weight: 700;
+    color: gray;
+}
+.carouselimg1:hover {
+    width: 175px;
+    height: 175px;
+}
+.jwellery{
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+
 }
