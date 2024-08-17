@@ -63,22 +63,25 @@ justify-content: space-evenly;
 #maindiv{
     width: 100%;
 }
-#datacontainer1{
+#datacontainer1,#datacontainer2{
     width: 90%;
-    
 }
-#titleid2{
+#titleid1,#titleid2{
     font-size: 15px;
     font-weight: 700;
 }
-#categoryid2{
+#categoryid1,#categoryid2{
     font-size: 15px;
     font-weight: 700;
     color: gray;
 }
-.carouselimg1:hover {
-    width: 175px;
-    height: 175px;
+#datacontainer2:hover {
+    width: 200%;
+    
+}
+#datacontainer1:hover {
+    width: 200%;
+    
 }
 .jwellery{
     font-size: 40px;
