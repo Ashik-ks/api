@@ -76,18 +76,18 @@ justify-content: space-evenly;
     font-weight: 700;
     color: gray;
 }
-#datacontainer2:hover {
-    width: 100%;
-    
-}
 #datacontainer1:hover {
-    width: 200%;
     
+    box-shadow: 3px 3px 30px 10px  rgb(228, 124, 124);
 }
-#datacontainer3:hover {
-    width: 00%;
+/* #datacontainer1:hover {
     
-}
+    
+} */
+/* #datacontainer3:hover {
+    
+    
+} */
 .jwellery{
     font-size: 40px;
     font-weight: 700;

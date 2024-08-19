@@ -60,7 +60,7 @@
                           <div id="btnid" class = "text-center"><button onclick="handleClick(${datas[i].id})">Details</button></div>
                           </div>
                           <div class="div2">
-                          <div id = "imageid" ><img src ="${datas[i].image} "class = "carouselimg"></div>
+                          <div id = "imageid" ><img onclick="handleClick(${datas[i].id})" src ="${datas[i].image} "class = "carouselimg"></div>
                      
                           </div>
                           </div>
@@ -71,7 +71,7 @@
                         if(datas[i].category === arr1[1]){
                           rows1 = rows1 + `
                           <div id = "datacontainer1" class ="shadow p-3 mb-5 bg-body rounded lh-lg">
-                     <div id = "imageid1" class="text-center" ><img src ="${datas[i].image} "class = "carouselimg1"></div>
+                     <div id = "imageid1" class="text-center" ><img onclick="handleClick(${datas[i].id})" src ="${datas[i].image} "class = "carouselimg1 "></div>
                      <div id = "titleid1" class = "mt-5">${datas[i].title}</div>
                      <div id = "categoryid1">${datas[i].category}</div>
                      <div id = "ratingid1">Rating : ${datas[i].rating.rate}</div>
@@ -83,7 +83,7 @@
                         if(datas[i].category === arr1[2]){
                           rows2 = rows2 + `
                           <div id = "datacontainer2" class ="shadow p-3 mb-5 bg-body rounded lh-lg">
-                       <div id = "imageid2" class="text-center" ><img src ="${datas[i].image} "class = "carouselimg1"></div>
+                       <div id = "imageid2" class="text-center" ><img onclick="handleClick(${datas[i].id})" src ="${datas[i].image} "class = "carouselimg1"></div>
                         <div id = "titleid2" class = "mt-5">${datas[i].title}</div>
                           <div id = "categoryid2">${datas[i].category}</div>
                           <div id = "ratingid2">Rating : ${datas[i].rating.rate}</div>
@@ -95,7 +95,7 @@
                         if(datas[i].category === arr1[3]){
                           rows3 = rows3 + `
                           <div id = "datacontainer2" class ="shadow p-3 mb-5 bg-body rounded lh-lg">
-                       <div id = "imageid2" class="text-center" ><img src ="${datas[i].image} "class = "carouselimg1"></div>
+                       <div id = "imageid2" class="text-center" ><img onclick="handleClick(${datas[i].id})" src ="${datas[i].image} "class = "carouselimg1"></div>
                         <div id = "titleid2" class = "mt-5">${datas[i].title}</div>
                           <div id = "categoryid2">${datas[i].category}</div>
                           <div id = "ratingid2">Rating : ${datas[i].rating.rate}</div>
@@ -165,14 +165,15 @@
                   console.log("parsed_userData",parsed_userData);
     
     
-                  let load = document.getElementById('loadeditems');
+                  let load = document.getElementById('titleid');
                   console.log("load",load);
-                  let load1 = document.getElementById('loadeditems1');
-                  let load2 = document.getElementById('loadeditems2');
-                  let load3 = document.getElementById('loadeditems3');
-                  let load4 = document.getElementById('loadeditems4');
-                  let load5 = document.getElementById('loadeditems5');
-                  let load6 = document.getElementById('loadeditemsimg');
+                  let load1 = document.getElementById('descriptionid');
+                  let load2 = document.getElementById('categoryid');
+                  let load3 = document.getElementById('priceid');
+                  let load4 = document.getElementById('rateid');
+                  let load5 = document.getElementById('countid');
+                  console.log(load5)
+                  let load6 = document.getElementById('viewimg');
                   
                   
     
@@ -183,7 +184,8 @@
                       load1.innerHTML = parsed_userData.description; 
                       load2.innerHTML =`category - ${parsed_userData.category}`; 
                       load3.innerHTML = `price - ${parsed_userData.price}`; 
-                      load4.innerHTML = `rating - ${parsed_userData.rating}`; 
+                      load4.innerHTML = `rating - ${parsed_userData.rating.rate}`; 
+                      load5.innerHTML = `count - ${parsed_userData.rating.count}`;
                      
                      
     
