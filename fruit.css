@@ -101,6 +101,15 @@ justify-content: space-evenly;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+.producttext{
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.viewtext{
+    font-size: 40px;
+    font-weight: 500;
+}
 
 
 

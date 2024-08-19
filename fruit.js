@@ -171,17 +171,21 @@
                   let load2 = document.getElementById('loadeditems2');
                   let load3 = document.getElementById('loadeditems3');
                   let load4 = document.getElementById('loadeditems4');
-                  // let load5 = document.getElementById('loadeditems1');
-                  // let load6 = document.getElementById('loadeditems1');
+                  let load5 = document.getElementById('loadeditems5');
+                  let load6 = document.getElementById('loadeditemsimg');
+                  
                   
     
     
                   // load.value =.title;
-                  
-                      load.innerHTML = parsed_userData.title; 
+                      load6.innerHTML = `<img src = "${parsed_userData.image}" style="width : 400px; height: 400px;">`;
+                      load.innerHTML = `Title - ${parsed_userData.title}`; 
                       load1.innerHTML = parsed_userData.description; 
-                      // load2.innerHTML =<img src="${parsed_userData.image}" style="width:400px; height:400px;">
-                      // load3.innerHTML ="{parsed_userData.image}"
+                      load2.innerHTML =`category - ${parsed_userData.category}`; 
+                      load3.innerHTML = `price - ${parsed_userData.price}`; 
+                      load4.innerHTML = `rating - ${parsed_userData.rating}`; 
+                     
+                     
     
                   
                       console.log("Element with id 'loadeditems' not found");
